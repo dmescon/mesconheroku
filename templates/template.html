@@ -20,6 +20,29 @@
 	<script type="text/javascript" src="{{ static_url('js/jquery-2.1.4.min.js') }}"></script> <!-- bootstrap 3 requires jquery --> 
     <script type="text/javascript" src="{{ static_url('js/bootstrap.min.js') }}"></script>	
     <link rel="stylesheet" type="text/css" href="{{ static_url('css/bootstrap.min.css') }}"/>
+	
+	<style>
+	.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	}
+	
+	ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+	}
+
+	ul.pagination li {display: inline;}
+
+	ul.pagination li a {
+		color: black;
+		float: left;
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+	</style>
 </head>
 
 
@@ -59,13 +82,13 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Project A</a></li>
-            <li><a href="#">Project B</a></li>
-            <li><a href="#">Project C</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Project A</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Project B</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Project C</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Separated link</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="http://mescon.herokuapp.com/">One more separated link</a></li>
           </ul>
         </li>
       </ul>
@@ -80,11 +103,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Action</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Another action</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Something else here</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Separated link</a></li>
           </ul>
         </li>
       </ul>
