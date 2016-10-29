@@ -21,9 +21,9 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [(r"/", Home),
 		(r"/Data/", Data),
-		(r"/Music/", Music),
-		(r"/Piano/", Piano),
-		(r"/Guitar/", Guitar)]
+		(r"/Music/Synth/", Music),
+		(r"/Music/Piano/", Piano),
+		(r"/Music/Guitar/", Guitar)]
                     
         """
         # debug=True, testing mode
