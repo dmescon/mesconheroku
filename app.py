@@ -21,7 +21,9 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [(r"/", Home),
 		(r"/Data/", Data),
-		(r"/Music/", Music)]
+		(r"/Music/", Music),
+		(r"/Piano/", Piano),
+		(r"/Guitar/", Guitar)]
                     
         """
         # debug=True, testing mode
@@ -63,7 +65,17 @@ class Music(BaseHandler):
         self.render('music.html',
                     main_title = 'Mescon Music'
         )        
-    
+class Piano(BaseHandler):
+    def get(self):
+        self.render('piano.html',
+                    main_title = 'Mescon Music'
+        )        
+class Guitar(BaseHandler):
+    def get(self):
+        self.render('guitar.html',
+                    main_title = 'Mescon Music'
+        )        
+            
 # Script start here
 if __name__ == "__main__":
     tornado.options.parse_command_line()
