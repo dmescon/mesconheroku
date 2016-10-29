@@ -20,8 +20,8 @@ define("debug", default=True, type=bool)
 class Application(tornado.web.Application):
     def __init__(self):
         handlers = [(r"/", Home),
-		(r"/Data", Data),
-		(r"/Music", Music)]
+		(r"/Data/", Data),
+		(r"/Music/", Music)]
                     
         """
         # debug=True, testing mode
