@@ -78,7 +78,7 @@ class Guitar(BaseHandler):
         )     
 class Synth(BaseHandler):
     def get(self):
-        self.render('guitar.html',
+        self.render('synth.html',
                     main_title = 'Mescon Music'
         )   		
             
