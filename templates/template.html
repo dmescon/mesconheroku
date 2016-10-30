@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<!-- Heading code block -->
-    {% block head %}
+    
 	<!-- lets the browser know that the page is using the UTF-8 character set -->
     <meta charset="utf-8">
 	
@@ -19,10 +19,11 @@
 	
 	<!-- stuff from past lessons -->
     <title>{{ escape(main_title) }}</title>
-	<script type="text/javascript" src="{{ static_url('js/jquery-2.1.4.min.js') }}"></script> <!-- bootstrap 3 requires jquery --> 
+	<script type="text/javascript" src="{{ static_url('js/jquery-3.1.1.min.js') }}"></script> <!-- bootstrap 3 requires jquery --> 
     <script type="text/javascript" src="{{ static_url('js/bootstrap.min.js') }}"></script>	
     <link rel="stylesheet" type="text/css" href="{{ static_url('css/bootstrap.min.css') }}"/>
 	
+	<!--
 	<style>
 	.newspaper {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
@@ -45,8 +46,13 @@
 		text-decoration: none;
 	}
 	</style>
-	
+	{% block head %}
     {% end block %}
+	
+	-->
+	{% block head %}
+	
+	{% end block %}
 </head>
 
 
