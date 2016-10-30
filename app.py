@@ -21,7 +21,8 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [(r"/", Home),
 		(r"/Data/", Data),
-		(r"/Music/Synth/", Music),
+		(r"/Music/", Music),
+		(r"/Music/Synth/", Synth),
 		(r"/Music/Piano/", Piano),
 		(r"/Music/Guitar/", Guitar)]
                     
@@ -74,7 +75,12 @@ class Guitar(BaseHandler):
     def get(self):
         self.render('guitar.html',
                     main_title = 'Mescon Music'
-        )        
+        )     
+class Synth(BaseHandler):
+    def get(self):
+        self.render('guitar.html',
+                    main_title = 'Mescon Music'
+        )   		
             
 # Script start here
 if __name__ == "__main__":
