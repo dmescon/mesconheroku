@@ -63,7 +63,7 @@ class Data(BaseHandler):
     
 class Music(BaseHandler):
     def get(self):
-        self.render('music.html',
+        self.render('music1.html',
                     main_title = 'Mescon Music'
         )        
 class Piano(BaseHandler):
