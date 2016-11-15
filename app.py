@@ -21,6 +21,7 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [(r"/", Home),
 		(r"/Data/", Data),
+		(r"/Data/Euclid/", Euclid),
 		(r"/Music/", Music),
 		(r"/Music/Synth/", Synth),
 		(r"/Music/Piano/", Piano),
@@ -60,7 +61,11 @@ class Data(BaseHandler):
         self.render('datascience.html',
                     main_title = 'Mescon Data Science'
         )        
-    
+class Euclid(BaseHandler):
+    def get(self):
+        self.render('EuclidianAlgo.html',
+                    main_title = 'Mescon Euclidian Algorithm'
+        )     
 class Music(BaseHandler):
     def get(self):
         self.render('music1.html',
