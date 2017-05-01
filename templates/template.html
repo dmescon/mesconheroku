@@ -77,13 +77,18 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse navbar-ex1-collapse">
 <ul class="nav navbar-nav">
-<li class="active"><a href="/">Home</a></li>
-<li><a href="http://bit.ly/1SFoLgY" target="_blank" onclick="ga('send', 'event', 'click', 'Visit Online Store', 1);">Online Store</a></li>
-<li><a href="https://groups.google.com/forum/#!forum/hedaro" target="_blank">Community</a></li>
-<li><a href="http://datagames.herokuapp.com" target="_blank">Data Games</a></li>
+<li class="active"><a href="http://mescon.herokuapp.com/">
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science<span class="caret"></span></a>
+ <ul class="dropdown-menu">
+            <li><a href="http://mescon.herokuapp.com/Data/Euclid/">Euclid Algo</a></li>
+            <li><a href="http://mescon.herokuapp.com/Data/EnergyAudit/">Energy Audit</a></li>
+            <li><a href="http://mescon.herokuapp.com/">Project C</a></li>
+<li><a href="http://mescon.herokuapp.com/Data/">Data Science</a></li> 
+
+
 </ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a href="/affiliate">Affiliate Program</a></li>
+<li><a href="http://mescon.herokuapp.com/Music/">Music</a></li>
 <li><a href="/about">About Us</a></li>
 </ul>
 </div><!-- /.navbar-collapse -->
@@ -97,6 +102,7 @@
 
     <!-- Heading code block -->
     {% block heading %}
+		<br>
 		<br>
 		<br>
 		<img class="img-responsive center-block" src="{{ static_url('Images/Band/Header.jpg') }}" >
