@@ -25,7 +25,8 @@ class Application(tornado.web.Application):
 		(r"/Music/", Music),
 		(r"/Music/Synth/", Synth),
 		(r"/Music/Piano/", Piano),
-		(r"/Music/Guitar/", Guitar)]
+		(r"/Music/Guitar/", Guitar),
+		(r"/Data/EnergyAudit/", EnergyAudit)]
                     
         """
         # debug=True, testing mode
@@ -86,6 +87,11 @@ class Synth(BaseHandler):
         self.render('synth.html',
                     main_title = 'Mescon Music'
         )   		
+class EnergyAudit(BaseHandler):
+    def get(self):
+        self.render('EnergyAudit.html',
+                    main_title = 'Mescon Energy Audit'
+        )    	
             
 # Script start here
 if __name__ == "__main__":
