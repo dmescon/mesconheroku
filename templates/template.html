@@ -22,16 +22,10 @@
 	<script type="text/javascript" src="{{ static_url('js/jquery-3.1.1.min.js') }}"></script> <!-- bootstrap 3 requires jquery --> 
     <script type="text/javascript" src="{{ static_url('js/bootstrap.min.js') }}"></script>	
     <link rel="stylesheet" type="text/css" href="{{ static_url('css/bootstrap.min.css') }}"/>
-	<style>
-	img.fit {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
-	}
-	<!--
 	
+
+	<!--
+	<style>
 	.newspaper {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
@@ -56,10 +50,10 @@
 	
 	{% block head %}
     {% end block %}
-	
+	</style>
 	-->
 	
-	</style>
+	
 	{% block head %}
 	
 	{% end block %}
@@ -74,8 +68,8 @@
     <!-- Heading code block -->
     {% block heading %}
 		
-		
-			<center><img .fit src="{{ static_url('Images/Band/Header.jpg') }}" max-width = 100%> </center> 
+		<img class="img-responsive center-block" src="{{ static_url('Images/Band/Header.jpg') }}" >
+			
 		
 		
 		<center><p>(Around the back....shhh)</p></center>
